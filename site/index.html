@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eef8ff">
+  <title>AmorSaúde Cerquilho | Login</title>
+  <meta name="description" content="Página de login da AmorSaúde Cerquilho para acessar resultados, agendamentos e serviços.">
+  <link rel="preload" as="image" href="login/assets/logo-amorsaude-cerquilho.png">
+  <link rel="preload" as="image" href="login/assets/mascote-login.png">
+  <link rel="stylesheet" href="login/css/login.css">
+  <link rel="icon" type="image/svg+xml" href="login/assets/logo-icon.png">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M12 12.2a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Zm-7.2 8a7.2 7.2 0 0 1 14.4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><path d="M7 10V8a5 5 0 0 1 10 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M6.5 10h11A1.5 1.5 0 0 1 19 11.5v7A1.5 1.5 0 0 1 17.5 20h-11A1.5 1.5 0 0 1 5 18.5v-7A1.5 1.5 0 0 1 6.5 10Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 14v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2.8 12s3.2-5.5 9.2-5.5S21.2 12 21.2 12s-3.2 5.5-9.2 5.5S2.8 12 2.8 12Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 14.7a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3.2 19 6v5.2c0 4.5-2.9 8-7 9.6-4.1-1.6-7-5.1-7-9.6V6l7-2.8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.8 12.1 2 2 4.6-4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-plus-shield" viewBox="0 0 24 24"><path d="M12 3.2 19 6v5.2c0 4.5-2.9 8-7 9.6-4.1-1.6-7-5.1-7-9.6V6l7-2.8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 8.3v6.4M8.8 11.5h6.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7 3v3M17 3v3M4.5 9h15M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 13h2M14 13h2M8 17h2M14 17h2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-clip" viewBox="0 0 24 24"><path d="M9 5h6M9 4a2 2 0 0 0-2 2v1h10V6a2 2 0 0 0-2-2M7 7H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 12h8M8 16h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 20.5S4.3 16 4.3 9.9A4.1 4.1 0 0 1 12 7.8a4.1 4.1 0 0 1 7.7 2.1c0 6.1-7.7 10.6-7.7 10.6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+
+    <symbol id="icon-chat-feedback" viewBox="0 0 24 24"><path d="M5.5 17.2H5a2.8 2.8 0 0 1-2.8-2.8V6.8A2.8 2.8 0 0 1 5 4h14a2.8 2.8 0 0 1 2.8 2.8v7.6a2.8 2.8 0 0 1-2.8 2.8h-5.2l-5.2 3.2a.6.6 0 0 1-.9-.5v-2.7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7.5 9h9M7.5 12.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-star-feedback" viewBox="0 0 24 24"><path d="m12 3.7 2.4 5 5.5.8-4 3.9.9 5.5L12 16.3l-4.9 2.6 1-5.5-4-3.9 5.5-.8L12 3.7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-chart-feedback" viewBox="0 0 24 24"><path d="M4 19V5M4 19h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 16v-4M12 16V8M16 16v-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="m7 10 3-3 3 2 4-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <main class="page" id="topo">
+    <header class="topbar" aria-label="Cabeçalho">
+      <a class="brand" href="#topo" aria-label="AmorSaúde Cerquilho">
+        <img src="login/assets/logo-amorsaude-cerquilho.png" alt="AmorSaúde Cerquilho">
+      </a>
+
+      <div class="care-message">
+        <svg><use href="#icon-plus-shield"></use></svg>
+        <p>Cuidando de você,<br><strong>sempre com amor.</strong></p>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Login AmorSaúde Cerquilho">
+      <div class="left-panel">
+        <p class="welcome">Seja bem-vindo! <span aria-hidden="true">♥</span></p>
+        <h1>Acesse sua conta</h1>
+        <p class="subtitle">Entre para acompanhar seus feedbacks, avaliações<br>e a evolução da qualidade do atendimento.</p>
+
+        <form class="login-card" id="loginForm" autocomplete="on">
+          <div class="field-group">
+            <label for="usuario">E-mail ou usuário</label>
+            <div class="input-shell">
+              <svg><use href="#icon-user"></use></svg>
+              <input id="usuario" name="usuario" type="text" placeholder="Digite seu e-mail ou usuário" autocomplete="username" required>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="senha">Senha</label>
+            <div class="input-shell">
+              <svg><use href="#icon-lock"></use></svg>
+              <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+              <button class="show-pass" id="toggleSenha" type="button" aria-label="Mostrar senha">
+                <svg><use href="#icon-eye"></use></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="checkline" for="lembrar">
+              <input id="lembrar" name="lembrar" type="checkbox">
+              <span></span>
+              Lembrar acesso
+            </label>
+            <a href="#recuperar">Esqueci minha senha</a>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <span>Entrar</span>
+            <svg><use href="#icon-arrow"></use></svg>
+          </button>
+        </form>
+
+        <button class="btn btn-outline" type="button" id="areaPaciente">
+          <svg><use href="#icon-user"></use></svg>
+          Acessar área do paciente
+        </button>
+
+        <p class="safe-text">
+          <svg><use href="#icon-shield"></use></svg>
+          Seus dados estão protegidos com segurança.
+        </p>
+      </div>
+
+      <div class="right-panel" aria-hidden="true">
+        <img class="mascot" src="login/assets/mascote-login.png" alt="">
+      </div>
+    </section>
+
+    <section class="service-strip feedback-strip" aria-label="Recursos de feedback">
+      <article>
+        <span class="mini-icon blue"><svg><use href="#icon-chat-feedback"></use></svg></span>
+        <div>
+          <h2>Enviar feedback</h2>
+          <p>Conte como foi sua experiência<br>em poucos minutos.</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="mini-icon green"><svg><use href="#icon-star-feedback"></use></svg></span>
+        <div>
+          <h2>Avaliar atendimento</h2>
+          <p>Dê sua nota para recepção,<br>médicos e serviços.</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="mini-icon amber"><svg><use href="#icon-heart"></use></svg></span>
+        <div>
+          <h2>Opinião segura</h2>
+          <p>Suas respostas são protegidas<br>e usadas com cuidado.</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="mini-icon blue"><svg><use href="#icon-chart-feedback"></use></svg></span>
+        <div>
+          <h2>Resultados da pesquisa</h2>
+          <p>Acompanhe melhorias criadas<br>a partir dos feedbacks.</p>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="anoAtual">2026</span> AmorSaúde Cerquilho. Todos os direitos reservados.
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="login/js/login.js"></script>
+</body>
+</html>
