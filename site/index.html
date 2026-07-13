@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9f7ff">
+  <title>AmorSaúde Cerquilho | Login</title>
+  <meta name="description" content="Acesse o painel de feedback e qualidade da AmorSaúde Cerquilho.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="login/assets/brand-dia-dos-pais.png">
+  <link rel="preload" as="image" href="login/assets/hero-pais.png">
+  <link rel="stylesheet" href="login/css/login.css">
+  <link rel="icon" type="image/png" href="login/assets/logo-icon.png">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true">
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M12 12.1a4.1 4.1 0 1 0 0-8.2 4.1 4.1 0 0 0 0 8.2Zm-7 8.1a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><path d="M7.2 10V8.2a4.8 4.8 0 0 1 9.6 0V10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="5.3" y="10" width="13.4" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 14.1v2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2.8 12s3.1-5.3 9.2-5.3 9.2 5.3 9.2 5.3-3.1 5.3-9.2 5.3S2.8 12 2.8 12Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-shield-plus" viewBox="0 0 24 24"><path d="M12 2.8 19 5.6v5.5c0 4.5-2.8 8-7 9.8-4.2-1.8-7-5.3-7-9.8V5.6l7-2.8Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M12 7.6v7M8.5 11.1h7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M5 4h14a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-6l-5.4 3.4V17H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8" cy="10.5" r=".8" fill="currentColor"/><circle cx="12" cy="10.5" r=".8" fill="currentColor"/><circle cx="16" cy="10.5" r=".8" fill="currentColor"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3.1 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3.1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-shield-lock" viewBox="0 0 24 24"><path d="M12 2.8 19 5.6v5.5c0 4.5-2.8 8-7 9.8-4.2-1.8-7-5.3-7-9.8V5.6l7-2.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><rect x="9" y="10" width="6" height="5.5" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.4 10V8.9a1.6 1.6 0 0 1 3.2 0V10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 20V5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 17v-5M12 17V8M16 17V5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <main class="page-shell" id="topo">
+    <header class="topbar">
+      <a class="brand" href="#topo" aria-label="AmorSaúde Cerquilho, Dia dos Pais">
+        <img src="login/assets/brand-dia-dos-pais.png" alt="AmorSaúde Cerquilho, Dia dos Pais">
+      </a>
+
+      <div class="care-message" aria-label="Cuidando de você, sempre com amor">
+        <svg aria-hidden="true"><use href="#icon-shield-plus"></use></svg>
+        <p>Cuidando de você,<br><strong>sempre com amor.</strong></p>
+      </div>
+    </header>
+
+    <img class="hero-art" src="login/assets/hero-pais.png" alt="Mascote AmorSaúde pai e filho soltando pipa">
+
+    <section class="hero" aria-label="Área de acesso">
+      <div class="login-column">
+        <p class="welcome">Seja bem-vindo! <span aria-hidden="true">♥</span></p>
+        <h1>Acesse sua conta</h1>
+        <p class="subtitle">Entre para acompanhar seus feedbacks, avaliações<br class="desktop-only"> e a evolução da qualidade do atendimento.</p>
+
+        <form class="login-card" id="loginForm" autocomplete="on">
+          <div class="field-group">
+            <label for="usuario">E-mail ou usuário</label>
+            <div class="input-shell">
+              <svg aria-hidden="true"><use href="#icon-user"></use></svg>
+              <input id="usuario" name="usuario" type="text" placeholder="Digite seu e-mail ou usuário" autocomplete="username" required>
+            </div>
+          </div>
+
+          <div class="field-group password-field">
+            <label for="senha">Senha</label>
+            <div class="input-shell">
+              <svg aria-hidden="true"><use href="#icon-lock"></use></svg>
+              <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+              <button class="show-pass" id="toggleSenha" type="button" aria-label="Mostrar senha">
+                <svg aria-hidden="true"><use href="#icon-eye"></use></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label class="checkline" for="lembrar">
+              <input id="lembrar" name="lembrar" type="checkbox">
+              <span aria-hidden="true"></span>
+              Lembrar acesso
+            </label>
+            <a href="#recuperar">Esqueci minha senha</a>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <span>Entrar</span>
+            <svg aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </button>
+
+          <button class="btn btn-outline" type="button" id="areaPaciente">
+            <svg aria-hidden="true"><use href="#icon-user"></use></svg>
+            <span>Acessar área do paciente</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Benefícios do feedback">
+      <article class="benefit-card">
+        <span class="benefit-icon"><svg><use href="#icon-chat"></use></svg></span>
+        <div class="benefit-copy">
+          <h2>Envie seu feedback</h2>
+          <p>Compartilhe sua experiência<br>e nos ajude a melhorar sempre.</p>
+        </div>
+        <svg class="benefit-arrow"><use href="#icon-arrow"></use></svg>
+      </article>
+
+      <article class="benefit-card">
+        <span class="benefit-icon"><svg><use href="#icon-star"></use></svg></span>
+        <div class="benefit-copy">
+          <h2>Avalie seu atendimento</h2>
+          <p>Sua avaliação faz a diferença<br>na vida de muitas pessoas.</p>
+        </div>
+        <svg class="benefit-arrow"><use href="#icon-arrow"></use></svg>
+      </article>
+
+      <article class="benefit-card">
+        <span class="benefit-icon"><svg><use href="#icon-shield-lock"></use></svg></span>
+        <div class="benefit-copy">
+          <h2>Sua opinião é segura</h2>
+          <p>Suas informações são tratadas<br>com confidencialidade.</p>
+        </div>
+        <svg class="benefit-arrow"><use href="#icon-arrow"></use></svg>
+      </article>
+
+      <article class="benefit-card">
+        <span class="benefit-icon"><svg><use href="#icon-chart"></use></svg></span>
+        <div class="benefit-copy">
+          <h2>Acompanhe resultados</h2>
+          <p>Veja como seu feedback<br>gera melhorias reais.</p>
+        </div>
+        <svg class="benefit-arrow"><use href="#icon-arrow"></use></svg>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-heart" aria-hidden="true">♥</span>
+      <span>AmorSaúde Cerquilho</span>
+      <span class="footer-dot">•</span>
+      <span>Cuidando de você, sempre com amor.</span>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="login/js/login.js"></script>
+</body>
+</html>
