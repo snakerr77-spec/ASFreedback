@@ -7,16 +7,16 @@ directory = "./site"
 binding = "ASSETS"
 run_worker_first = ["/api/*"]
 
-# IMPORTANTE:
-# O banco D1 deve ser ligado no painel da Cloudflare como binding chamado DB.
-# Não coloque DB em Variáveis e segredos. DB é uma vinculação D1.
+name = "amor-saude-feedback"
+main = "src/index.js"
+compatibility_date = "2026-07-29"
 
-# O login agora consulta usuários no D1 pela rota /api/login.
-# Não há usuário e senha salvos no JavaScript público do site.
+[assets]
+directory = "./site"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
 
-# Depois de criar ou escolher o banco D1, adicione o binding pelo painel
-# com o nome DB. Para configurar pelo arquivo, remova os # e preencha:
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "asfreedback"
-# database_id = "COLE_O_ID_DO_D1_AQUI"
+[[d1_databases]]
+binding = "DB"
+database_name = "amorsaudeexp4-db"
+database_id = "d3c0be5c-3170-42e0-9339-ecd1d61974fe"
