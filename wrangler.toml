@@ -7,10 +7,7 @@ directory = "./site"
 binding = "ASSETS"
 run_worker_first = ["/api/*"]
 
-# D1
-# Vincule o banco pelo painel da Cloudflare com o nome exato DB.
-# Alternativamente, descomente e preencha as linhas abaixo:
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "asfreedback"
-# database_id = "COLE_AQUI_O_DATABASE_ID"
+[[d1_databases]]
+binding = "DB"
+database_name = "asfreedback"
+database_id = "4208e6e1-e38b-4c59-b588-ee4f640bd460"
