@@ -9,5 +9,5 @@ run_worker_first = ["/api/*"]
 
 [[d1_databases]]
 binding = "DB"
-database_name = "asfreedback"
+database_name = "feedback_amorsaude"
 database_id = "4208e6e1-e38b-4c59-b588-ee4f640bd460"
