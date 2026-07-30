@@ -1,0 +1,16 @@
+name = "amor-saude-feedback"
+main = "src/index.js"
+compatibility_date = "2026-07-30"
+
+[assets]
+directory = "./site"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+# D1
+# Vincule o banco pelo painel da Cloudflare com o nome exato DB.
+# Alternativamente, descomente e preencha as linhas abaixo:
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "asfreedback"
+# database_id = "COLE_AQUI_O_DATABASE_ID"
